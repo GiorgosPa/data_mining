@@ -4,26 +4,15 @@ A = readtable('fuel-economy-dataset.csv');
 hist(A.displ);
 print('displHistogram','-dpng');
 hist(categorical(A.manufacturer));
-print('manufacturerHistogram','-dpng');
+print('displHistogram','-dpng')
 hist(A.cty);
-print('ctyHistogram','-dpng');
 hist(A.hwy);
-print('hwylHistogram','-dpng')
 hist(categorical(A.model));
-print('modelHistogram','-dpng')
 hist(categorical(A.year));
-print('yearHistogram','-dpng')
 hist(categorical(A.trans));
-print('transHistogram','-dpng')
 hist(A.cyl);
-print('cylHistogram','-dpng')
 hist(categorical(A.drv));
-print('drvHistogram','-dpng')
 hist(categorical(A.class));
-print('classHistogram','-dpng')
-hist(A.fl);
-print('flHistogram','-dpng')
-
 
 
 %Remove attributes fl and id they do not look intresting in our goal
